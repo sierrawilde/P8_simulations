@@ -1,0 +1,1 @@
+{"args": {"n_sims": 2, "working_dir": "./", "katydid_config": "configs/Katydid_ROACH_Config_06_2019.yaml", "locust_config": "configs/LocustFakeEvent_wnoise_100MHz_narrow_slopes.json", "snr_file_path": null, "sim_name": "Testing_1directory_slopescan20", "max_snr": 25.0, "remove_egg": true, "from_slope": 0.1, "to_slope": 1.1, "slope_stepsize": 0.3, "min_snr": 2.0}}

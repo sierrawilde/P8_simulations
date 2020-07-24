@@ -1,0 +1,78 @@
+{
+    "generators":
+    [
+       "fake-track",
+       "lpf-fft",
+       "decimate-signal",
+       "gaussian-noise",
+       "digitizer"
+    ],
+
+    "fake-track":
+    {
+    "signal-power": 1.0e-8,
+    "start-frequency":
+        {
+            "name":"uniform",
+            "min-value": 25907939281.0,
+            "max-value": 25910380687.25
+        },
+    "slope":
+        {
+            "name":"uniform",
+            "min-value": 0.0,
+            "max-value":1.0
+        },
+    "scattering-angle":
+        {
+            "name": "uniform",
+            "min-value": 89,
+            "max-value":90
+        },
+    "start-pitch-min": 89,
+    "start-pitch-max": 90,
+    "magnetic-field": 0.9578186017836624,
+    "start-time-min": 0.005,
+    "start-time-max": 0.009096,
+    "min-pitch": 88,
+    "domain": "time",
+    "lo-frequency": 25.9e9,
+    "track-length-mean": 1.8e-4,
+    "random-seed": 0,
+    "n-events": 1,
+    "hydrogen-fraction":0.5,
+    "root-filename": "LocustEvent.root"
+    },
+
+    "simulation":
+    {
+        "egg-filename": "locust_faketrack.egg",
+        "n-records": 1,
+        "n-channels": 1,
+        "acquisition-rate": 100,
+        "record-size": 2e6
+    },
+
+    "gaussian-noise":
+    {
+    "noise-floor-psd": 3e-14,
+    "domain": "time",
+    "random-seed": 0
+    },
+
+    "digitizer":
+    {
+    "v-range": 0.5,
+    "v-offset": 0,
+    "adc-values-signed": "true"
+    },
+
+    "decimate-signal":
+    {
+    },
+
+    "lpf-fft":
+    {
+    }
+
+}

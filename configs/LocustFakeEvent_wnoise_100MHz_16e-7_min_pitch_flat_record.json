@@ -1,0 +1,64 @@
+{
+    "generators":
+    [          
+       "fake-track",
+       "lpf-fft",
+       "decimate-signal",
+       "gaussian-noise",
+       "digitizer"
+    ],
+
+    "lpf-fft":
+    {
+    },
+    "decimate-signal":
+    {
+
+    },
+
+    "fake-track":
+    {
+    "random-seed": 0,
+    "magnetic-field": 0.9578186017836624,
+    "domain": "time",
+    "signal-power": 1e-9, 
+    "start-frequency-max": 25908183421.625,
+    "start-frequency-min": 25904695140.375,
+    "lo-frequency": 25.9e9,
+    "start-time-min": 0.005,
+    "start-time-max": 0.01,
+    "start-vphase": 0.0,
+    "slope-mean": 0.3523,
+    "slope-std": 0.0545,
+    "track-length-mean":2.0e-4,
+    "hydrogen-fraction": 0.5,
+    "start-pitch-min": 88,
+    "min-pitch": 88,
+    "pitch-correction": "true"
+    },
+    
+    "simulation":
+    {
+        "egg-filename": "locust_faketrack.egg",
+        "n-records": 1,
+        "n-channels": 1,
+        "acquisition-rate": 100,
+        "record-size": 2e6
+
+    },
+  
+    "gaussian-noise":
+    {
+    "noise-floor-psd": 3e-14,
+    "domain": "time",
+    "random-seed": 0
+    },
+
+    "digitizer":
+    {
+    "v-range": 0.5,
+    "v-offset": 0,
+    "adc-values-signed": "true"
+    }
+
+}
